@@ -130,11 +130,13 @@ a {
 .inner-header {
   background-image: url("../images/inner-header.jpg");
   color: var(--white-color);
+  padding: 30px 70px 70px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+  /*margin: 0;*/
 }
 
 .white-section,
@@ -144,6 +146,10 @@ a {
 
 
 /*Breadcrumbs*/
+.breadcrumbs-list {
+  display: flex;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -188,7 +194,7 @@ a {
 }
 
 .blue-button {
-  background-color: var(--black-color);
+  background-color: var(--blue-color);
 }
 
 .green-button {
@@ -295,9 +301,13 @@ a {
 }
 
 /*Recomendations*/
-/*.recommendations {*/
-/*  padding: 64px;*/
-/*}*/
+.recommendations-section {
+  padding: 64px 347px;
+}
+
+.recommendations-title {
+  line-height: 36px;
+}
 
 .recommendations-list {
   display: flex;
@@ -308,7 +318,7 @@ a {
 
 .recommendations-item {
   padding: 81px 85px;
-  flex-grow: 1;
+  flex-grow: 1;recommendations
 }
 
 .recommendations-img {
@@ -331,6 +341,27 @@ a {
   text-align: center;
 }
 
+/*Sort*/
+.sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px 40px;
+}
+
+.sort-list {
+  display: flex;
+}
+
+/*Hotel*/
+.hotel-list {
+  display: flex;
+  padding: 40px 70px;
+}
+
+.hotel-card-item {
+  margin-right: 20px;
+}
+
 /*Newsletter*/
 .newsletter-background {
   background-image: url("../images/subscribe.jpg");
@@ -341,6 +372,10 @@ a {
 
 .newsletter {
   padding: 96px 104px;
+}
+
+.newsletter-inner {
+  text-align: center;
 }
 
 /*Footer*/
@@ -356,6 +391,7 @@ a {
 }
 
 .footer-contacts-phone {
+  font-weight: 400;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -368,6 +404,11 @@ a {
 }
 
 /*Pagination*/
+.pagination-list {
+  display: flex;
+  padding: 40px 70px 60px;
+}
+
 .pagination-link {
   color: var(--white-color);
   background-color: var(--blue-color);
