@@ -118,10 +118,13 @@ a {
 
 .main-header,
 .inner-header {
-  display: flex;
   background-color: var(--black-color);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-header {
+  display: flex;
 }
 
 .main-header {
@@ -157,6 +160,10 @@ a {
 }
 
 /*Filter*/
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filter-group-title {
   font-size: 20px;
   line-height: 24px;
@@ -223,6 +230,14 @@ a {
 
 .secondary-navigation-list {
   display: flex;
+}
+
+.secondary-navigation-link {
+  padding: 20px 12px;
+}
+
+.navigation-link {
+  padding: 20px 6px;
 }
 
 .navigation-link,
@@ -319,7 +334,7 @@ a {
 
 .recommendations-item {
   padding: 81px 85px;
-  flex-grow: 1;recommendations
+  flex-grow: 1;
 }
 
 .recommendations-img {
