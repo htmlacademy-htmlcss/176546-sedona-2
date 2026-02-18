@@ -75,7 +75,27 @@ a {
   text-transform: uppercase;
 }
 
+.white-title {
+  color: var(--white-color);
+}
 
+/*Logo*/
+.logo {
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin: 0 auto;
+
+}
+
+.divider {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+/*Header*/
 .page-header {
   display: flex;
   align-items: center;
@@ -91,8 +111,13 @@ a {
   text-align: center;
 }
 
+.main-header {
+  position: relative;
+}
+
 .main-header,
 .inner-header {
+  display: flex;
   background-color: var(--black-color);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -231,13 +256,11 @@ a {
 
   display: block;
   width: 175px;
-  height: 56px;
 }
 
 .reasons-description {
   display: block;
   width: 230px;
-  height: 42px;
   margin: 0 auto;
 }
 
@@ -247,11 +270,8 @@ a {
 }
 
 .reasons-item {
-  width: 400px;
-  height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 102px 85px;
+  flex-grow: 1;
 }
 
 .reasons-img {
@@ -275,6 +295,10 @@ a {
 }
 
 /*Recomendations*/
+/*.recommendations {*/
+/*  padding: 64px;*/
+/*}*/
+
 .recommendations-list {
   display: flex;
   list-style: none;
@@ -283,11 +307,8 @@ a {
 }
 
 .recommendations-item {
-  width: 400px;
-  height: 385px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 81px 85px;
+  flex-grow: 1;
 }
 
 .recommendations-img {
@@ -296,8 +317,7 @@ a {
 
 /*Search*/
 .search {
-  display: flex;
-  flex-direction: column;
+  padding: 96px 304px;
 }
 
 .search-link,
@@ -320,23 +340,19 @@ a {
 }
 
 .newsletter {
-  display: flex;
-  flex-direction: column;
+  padding: 96px 104px;
 }
 
 /*Footer*/
 .page-footer {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  align-items: center;
+  padding: 40px 70px 30px;
 }
 
 .footer-contacts-address {
   display: block;
   width: 336px;
-  height: 40px;
 }
 
 .footer-contacts-phone {
@@ -348,7 +364,6 @@ a {
 .footer-social-list {
   display: flex;
   width: 142px;
-  height: 40px;
   list-style: none;
 }
 
