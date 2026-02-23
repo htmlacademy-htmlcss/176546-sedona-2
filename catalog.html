@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header white-section">
+    <header class="page-header white-section white-section">
       <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
       <nav class="navigation">
         <ul class="navigation-list list-none">
@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="secondary-naivigation-item">
-            <a class="secondary-navigation-link secondary-navigation-link-button" href="#">
+            <a class="secondary-navigation-link secondary-navigation-link-button white-title" href="#">
               <span class="visually-hidden">Кнопка</span>
               <span>ХОЧУ СЮДА!</span>
             </a>
@@ -46,16 +46,16 @@
     </header>
 
     <main class="main-inner main-container">
-      <section class="inner-header">
+      <section class="inner-header white-title">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list list-none">
-          <li class="bredcrumbs-item">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">
               <img class="breadcrumbs-image-home" src="images/svg/braedcrumbs-home.svg" width="13" height="15" alt="">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li class="bredcrumbs-item">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
@@ -63,10 +63,10 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Фильтры</h2>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-title">Инфраструктура</legend>
+          <fieldset class="catalog-filter-group fieldset-none">
+            <legend class="catalog-filter-group-title">Инфраструктура:</legend>
 
-            <ul class="catalot-filter-list">
+            <ul class="catalot-filter-list list-none">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pool" checked>
@@ -88,10 +88,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-title">Тип жилья</legend>
+          <fieldset class="catalog-filter-group fieldset-none">
+            <legend class="catalog-filter-group-title">Тип Жилья:</legend>
 
-            <ul class="catalot-filter-list">
+            <ul class="catalot-filter-list list-none">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
@@ -113,16 +113,15 @@
             </ul>
          </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group fieldset-none">
             <legend class="catalog-filter-group-title">Стоимость, ₽:</legend>
-
-            <ul class="catalot-filter-list">
-              <li class="catalog-filter-item">
+            <ul class="catalog-filter-list list-none">
+              <li class="catalog-filter-input">
                 <label class="control">
                   <input class="control-input" type="number" name="from" value="0">
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="catalog-filter-input">
                 <label class="control">
                   <input class="control-input" type="number" name="to" value="9000">
                 </label>
@@ -131,13 +130,13 @@
          </fieldset>
 
          <div class="catalog-buttons-group">
-           <button class="button blue-button" type="submit">Применить</button>
+           <button class="button blue-button catalog-filter-button" type="submit">Применить</button>
            <button class="button transparent-button" type="reset">Сброс</button>
          </div>
         </form>
       </section>
 
-      <section class="sort white-section">
+      <section class="sort white-section white-section">
         <h2 class="visually-hidden">Сортировка отелей</h2>
         <span class="sort-quantity">Найдено гостиниц: 38</span>
 
@@ -166,7 +165,7 @@
         </ul>
       </section>
 
-      <section class="hotel white-section">
+      <section class="hotel white-section white-section">
         <ul class="hotel-list list-none" >
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
@@ -177,11 +176,11 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 4000 ₽</span>
 
-            <a class="hotel-card-button" href="#">Подробнее</a>
-            <button class="button blue-button" type="button">В избранное</button>
+            <a class="hotel-card-button white-title" href="#">Подробнее</a>
+            <button class="button blue-button blue-button-card" type="button">В избранное</button>
 
             <span class="hotel-card-stars">★ ★ ★ ★</span>
-            <span class="hotel-card-rating">Рейтинг: 8,5</span>
+            <span class="hotel-card-rating white-title">Рейтинг: 8,5</span>
           </li>
 
           <li class="hotel-card-item">
@@ -193,11 +192,11 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 5000 ₽</span>
 
-            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button button white-title" href="#">Подробнее</a>
             <button class="button green-button" type="button">В избранном</button>
 
             <span class="hotel-card-stars">★ ★ ★ ★</span>
-            <span class="hotel-card-rating">Рейтинг: 9,2</span>
+            <span class="hotel-card-rating white-title">Рейтинг: 9,2</span>
           </li>
 
           <li class="hotel-card-item">
@@ -209,11 +208,11 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 2500 ₽</span>
 
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="button blue-button" type="button">В избранное</button>
+            <a class="hotel-card-button button white-title" href="#">Подробнее</a>
+            <button class="button blue-button blue-button-card" type="button">В избранное</button>
 
             <span class="hotel-card-stars">★ ★ ★</span>
-            <span class="hotel-card-rating">Рейтинг: 6,9</span>
+            <span class="hotel-card-rating white-title">Рейтинг: 6,9</span>
           </li>
 
           <li class="hotel-card-item">
@@ -225,33 +224,33 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 1500 ₽</span>
 
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="button blue-button" type="button">В избранное</button>
+            <a class="hotel-card-button button white-title" href="#">Подробнее</a>
+            <button class="button blue-button blue-button-card" type="button">В избранное</button>
 
             <span class="hotel-card-stars">★ ★</span>
-            <span class="hotel-card-rating">Рейтинг: 5,0</span>
+            <span class="hotel-card-rating white-title">Рейтинг: 5,0</span>
           </li>
         </ul>
       </section>
 
-      <ul class="pagination-list white-section list-none">
-        <li class="paginaton-item">
-          <a class="pagination-link pagination-link-current" href="#">1</a>
+      <ul class="pagination-list white-section list-none white-section">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-link-current white-title" href="#">1</a>
         </li>
-        <li class="paginaton-item">
-          <a class="pagination-link" href="#">2</a>
+        <li class="pagination-item">
+          <a class="pagination-link white-title" href="#">2</a>
         </li>
-        <li class="paginaton-item">
-          <a class="pagination-link" href="#">3</a>
+        <li class="pagination-item">
+          <a class="pagination-link white-title" href="#">3</a>
         </li>
-        <li class="paginaton-item">
-          <a class="pagination-link" href="#">4</a>
+        <li class="pagination-item">
+          <a class="pagination-link white-title" href="#">4</a>
         </li>
-        <li class="paginaton-item">
-          <a class="pagination-link pagination-link-more" href="#">...</a>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-link-more white-section" href="#">...</a>
         </li>
-        <li class="paginaton-item">
-          <a class="pagination-link" href="#">10</a>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-final-link white-title" href="#">10</a>
         </li>
       </ul>
 
@@ -262,13 +261,13 @@
           <p class="newsletter-form-email">
             <label class="newsletter-label" for="newsletter-email"></label>
             <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
+            <button class="button blue-button section-title" type="submit">Подписаться</button>
           </p>
-          <button class="button blue-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
-    <footer class="page-footer white-section">
+    <footer class="page-footer white-section white-section">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
