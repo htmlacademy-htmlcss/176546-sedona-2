@@ -188,8 +188,16 @@ a {
   margin-bottom: 32px;
 }
 
+.catalog-filter-container {
+  display: flex;
+}
+
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.catalog-buttons-group {
+  margin-top: 56px;
 }
 
 
@@ -228,15 +236,22 @@ a {
 
 .transparent-button {
   background-color: rgba(255, 255, 255, 0);
-  /*padding: 8px 58px*/
+  padding: 8px 58px
 }
 
 .green-button {
   background-color: var(--green-color);
 }
 
-.catalog-filter-button {
+.catalog-filter-button:not(:last-child) {
   border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.catalog-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*Card*/
@@ -412,8 +427,6 @@ a {
   background-color: var(--blue-color);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .search-link,
@@ -448,6 +461,11 @@ a {
 .newsletter-form-email {
   display: flex;
   justify-content: center;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /*Sort*/
