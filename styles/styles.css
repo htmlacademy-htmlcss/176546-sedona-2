@@ -150,13 +150,11 @@ a {
 /*Breadcrumbs*/
 .breadcrumbs-list {
   display: flex;
+  gap: 29px;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.breadcrumbs-item {
-  margin-right: 29px;
-}
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -175,10 +173,12 @@ a {
 
 .catalog-filter-group {
   margin-right: 70px;
+  min-width: 150px;
+  max-width: 280px;
 }
 
 .catalog-filter-group:nth-child(4) {
-  margin-left: auto;
+  margin: 0 70px;
 }
 
 .catalog-filter-group-title {
@@ -188,12 +188,12 @@ a {
   margin-bottom: 32px;
 }
 
-.catalog-filter-container {
-  display: flex;
-}
-
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.catalog-filter-container {
+  display: flex;
 }
 
 .catalog-buttons-group {
@@ -204,6 +204,8 @@ a {
 /*Control*/
 .control-input,
 .newsletter-email {
+  padding: 0;
+  font-family: inherit;
   background-color: var(--body-color);
   border: none;
   font-size: 18px;
@@ -212,13 +214,17 @@ a {
 
 .newsletter-email {
   padding: 14px 20px;
-  padding-right: 345px;
+  width: 100%;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 .control-input {
   font-weight: 700;
+}
+
+.control-input-price {
+  width: 100%;
 }
 
 
@@ -232,6 +238,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
+  display: inline-flex;
 }
 
 .transparent-button {
@@ -245,7 +252,7 @@ a {
 
 .catalog-filter-button:not(:last-child) {
   border-radius: 4px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .catalog-buttons-container {
@@ -264,6 +271,11 @@ a {
   color: var(--grey-color);
 }
 
+.hotel-card-rating {
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
+}
+
 /*Navigation*/
 .navigation-list {
   display: flex;
@@ -278,11 +290,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
-.secondary-navigation-link {
+.secondary-navigation-item:not(:last-child) {
   padding: 22px 12px;
-  display: block;
+}
+
+.secondary-navigation-item:last-child {
+  margin-left: 20px;
 }
 
 .navigation-link {
@@ -306,12 +322,14 @@ a {
 }
 
 .description-title {
+  padding: 0 220px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 25px;
 }
 
+.search-description,
 .description-reasons {
   margin: 0;
   font-size: 22px;
@@ -413,7 +431,7 @@ a {
 }
 
 .search-link,
-.secondary-navigation-link-button {
+.primary-button {
   background-color: var(--brown-color);
 
   font-size: 16px;
@@ -421,29 +439,25 @@ a {
   font-weight: 700;
   text-align: center;
   border-radius: 4px;
+  padding: 8px 26px;
 }
 
-.blue-button {
+.secondary-navigation-button {
+  padding: 8px 34px;
+}
+
+.secondary-button {
   background-color: var(--blue-color);
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 
 .search-link,
-.blue-button {
+.secondary-button {
   padding: 8px 50px;
 }
 
-.blue-button-card {
+.secondary-button-card {
   padding: 8px 20px;
-}
-
-.secondary-navigation-chosen {
-  margin-right: 20px;
-}
-
-.secondary-navigation-link-button {
-  padding: 8px 34px;
+  border-radius: 4px;
 }
 
 .search-description,
@@ -455,7 +469,7 @@ a {
 }
 
 .newsletter-description {
-  padding: 0 292px;
+  padding: 0 140px;
 }
 
 .newsletter-form-email {
@@ -466,6 +480,8 @@ a {
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /*Sort*/
@@ -484,10 +500,7 @@ a {
 
 .sort-list {
   display: flex;
-}
-
-.sort-list-item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .sort-list-item {
@@ -510,14 +523,35 @@ a {
 
 /*Hotel*/
 .hotel-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 70px;
+  gap: 20px;
 }
 
 .hotel-card-item {
-  margin-right: 20px;
   border: 1px solid var(--border-item-color);
   padding: 20px;
+}
+
+.hotel-card-title {
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.hotel-card-image {
+  margin-bottom: 16px;
+}
+
+.hotel-card-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-card-description:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /*Newsletter*/
@@ -529,7 +563,7 @@ a {
 }
 
 .newsletter {
-  padding: 96px 104px;
+  padding: 96px 258px;
 }
 
 .newsletter-inner {
@@ -573,11 +607,13 @@ a {
 /*Pagination*/
 .pagination-list {
   display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 40px 70px 60px;
 }
 
 .pagination-item {
-  display: flex;
+  display: inline-flex;
 }
 
 .pagination-link {
@@ -586,7 +622,6 @@ a {
   font-size: 20px;
   line-height: 36px;
   padding: 11px 24px;
-  margin-right: 8px;
   border-radius: 4px;
   background-color: var(--blue-color);
 }
@@ -597,7 +632,6 @@ a {
 }
 
 .pagination-link-more {
-  align-self: center;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
