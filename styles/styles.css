@@ -246,7 +246,9 @@ a {
   padding: 8px 58px
 }
 
-.green-button {
+.third-button {
+  padding: 8px 20px;
+  border-radius: 4px;
   background-color: var(--green-color);
 }
 
