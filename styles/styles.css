@@ -33,6 +33,7 @@
   --brown-color-hover: #615048;
   --brown-color-active: #756157;
   --button-disabled: #E5E5E5;
+  --border--navigation: #756257;
 }
 
 *,
@@ -316,8 +317,18 @@ a {
   padding: 20px 16px;
 }
 
-.navigation-link:hover {
+.naivigation-item {
+  position: relative;
+}
 
+.navigation-link-current::before {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: -20px;
+  height: 2px;
+  background-color: var(--border--navigation);
+  content: "";
 }
 
 .navigation-link,
@@ -508,6 +519,16 @@ a {
 
 .secondary-navigation-button {
   padding: 8px 34px;
+}
+
+.secondary-navigation-link {
+  position: relative;
+}
+
+.secondary-navigation-circle {
+  position: absolute;
+  top: -11px;
+  right: -9px;
 }
 
 .secondary-button {
