@@ -671,6 +671,10 @@ a {
   border: 2px solid var(--black-color);
 }
 
+.sort-list-item:focus a{
+  border: 2px solid var(--light-grey-color);
+}
+
 .select-sort {
   margin-left: auto;
   margin-right: 70px;
