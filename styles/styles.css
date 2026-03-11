@@ -110,10 +110,15 @@ a {
 }
 
 /*Header*/
+.header-logo {
+  position: absolute;
+  z-index: 1;
+}
+
 .page-header {
   display: flex;
   align-items: center;
-  padding: 0 70px;
+  padding: 0 64px;
 }
 
 /*Main*/
@@ -289,6 +294,10 @@ a {
 }
 
 /*Navigation*/
+.navigation {
+  margin-left: 168px;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -306,7 +315,7 @@ a {
 }
 
 .secondary-navigation-item:not(:last-child) {
-  padding: 22px 12px;
+  padding: 19px 12px;
 }
 
 .secondary-navigation-item:last-child {
