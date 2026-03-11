@@ -775,6 +775,18 @@ a {
   display: inline-flex;
 }
 
+.pagination-item:hover a,
+.pagination-item:focus a {
+  background-color: var(--blue-color-hover);
+  border-radius: 4px;
+}
+
+.pagination-item:active a {
+  background-color: var(--blue-color);
+  color: var(--white-color-active);
+}
+
+
 .pagination-link {
   font-weight: 700;
   font-style: normal;
@@ -783,6 +795,7 @@ a {
   padding: 11px 24px;
   border-radius: 4px;
   background-color: var(--blue-color);
+  outline: none;
 }
 
 .pagination-link-current,
@@ -795,6 +808,7 @@ a {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
+  padding: 16px 24px;
 }
 
 .pagination-link-current {
