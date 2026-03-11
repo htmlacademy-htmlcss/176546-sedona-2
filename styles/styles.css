@@ -596,6 +596,10 @@ a {
   background-color: var(--blue-color-hover);
 }
 
+.secondary-button:focus {
+  outline: none;
+}
+
 .secondary-button:active {
   background-color: var(--blue-color-active);
   color: var(--white-color-active);
