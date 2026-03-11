@@ -24,8 +24,9 @@
   --black-color-active: rgba(117, 97, 87, 0.3);
   --blue-color: #82b3d3;
   --blue-color-hover: #68A2CA;
-  --blue-color-active: rgba(104, 162, 202, 0.3);
+  --blue-color-active: rgba(130, 179, 211, 1);
   --green-color: #7db54F;
+  --green-color-hover: rgba(108, 158, 66, 1);
   --brown-color: #756157;
   --grey-color: #333333;
   --dark-grey-color: #83B3D333;
@@ -178,9 +179,20 @@ a {
 }
 
 .breadcrumbs-link:hover,
-.breadcrumbs-link:focus,
-.breadcrumbs-link:hover path {
+.breadcrumbs-link:focus {
   color: var(--white-color-hover);
+}
+
+.breadcrumbs-link:active {
+  color: var(--white-color-active);
+}
+
+.breadcrumbs-link:hover path {
+  fill: var(--white-color-hover);
+}
+
+.breadcrumbs-link:active path {
+  fill: var(--white-color-active);
 }
 
 .breadcrumbs-image-home {
@@ -269,6 +281,20 @@ a {
   padding: 8px 58px
 }
 
+.transparent-button:hover {
+  color: var(--white-color-hover);
+}
+
+.transparent-button:focus {
+  border: 3px solid var(--light-grey-color);
+  border-radius: 4px;
+  outline: none;
+}
+
+.transparent-button:active {
+  color: var(--white-color-active);
+}
+
 .third-button {
   padding: 8px 20px;
   border-radius: 4px;
@@ -294,6 +320,7 @@ a {
 .hotel-card-rating {
   background-color: var(--body-color);
   color: var(--grey-color);
+  font-weight: 400;
 }
 
 .hotel-card-rating {
@@ -526,7 +553,8 @@ a {
 
 .primary-button:disabled,
 .search-link:disabled,
-.secondary-button {
+.secondary-button:disabled,
+.third-button:disabled {
   background-color: var(--button-disabled);
   outline: none;
 }
@@ -534,6 +562,18 @@ a {
 .primary-button:active,
 .search-link:active {
   background-color: var(--brown-color-active);
+  color: var(--white-color-active);
+  outline: none;
+}
+
+.third-button:hover,
+.third-button:focus {
+  background-color: var(--green-color-hover);
+  outline: none;
+}
+
+.third-button:active {
+  background-color: var(--green-color);
   color: var(--white-color-active);
   outline: none;
 }
@@ -558,6 +598,7 @@ a {
 
 .secondary-button:active {
   background-color: var(--blue-color-active);
+  color: var(--white-color-active);
 }
 
 .search-link,
@@ -613,17 +654,21 @@ a {
   gap: 8px;
 }
 
-.sort-list-item {
+.sort-list-item a{
   padding: 17px 16px;
   border-radius: 4px;
 }
 
-.sort-list-item:first-child {
+.sort-list-item:first-child a{
   border: 2px solid var(--black-color);
 }
 
-.sort-list-item:not(:first-child) {
+.sort-list-item:not(:first-child) a {
   border: 2px solid var(--border-item-color);
+}
+
+.sort-list-item:hover a{
+  border: 2px solid var(--black-color);
 }
 
 .select-sort {
