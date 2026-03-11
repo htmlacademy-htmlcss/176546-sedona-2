@@ -274,11 +274,15 @@ a {
   border: none;
   display: inline-flex;
   cursor: pointer;
+  outline: none;
 }
 
 .transparent-button {
   background-color: rgba(255, 255, 255, 0);
-  padding: 8px 58px
+  padding: 8px 58px;
+  border-radius: 4px;
+  outline: none;
+  border: 3px solid transparent;
 }
 
 .transparent-button:hover {
@@ -286,9 +290,7 @@ a {
 }
 
 .transparent-button:focus {
-  border: 3px solid var(--light-grey-color);
-  border-radius: 4px;
-  outline: none;
+  border-color: var(--blue-color-active);
 }
 
 .transparent-button:active {
@@ -342,15 +344,15 @@ a {
   margin-left: auto;
 }
 
+.secondary-navigation-item {
+  position: relative;
+}
+
 .secondary-navigation-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.secondary-navigation-item {
-  position: relative;
 }
 
 .secondary-navigation-item:not(:last-child) {
@@ -363,20 +365,30 @@ a {
 
 .navigation-link {
   padding: 20px 16px;
+  position: relative;
+}
+
+.navigation-link::before {
+  position: absolute;
+  display: none;
+  content: "";
+  left: 16px;
+  right: 16px;
+  bottom: 2px;
+  height: 2px;
+  background-color: var(--border--navigation);
+}
+
+.navigation-link:hover::before {
+  display: block;
+}
+
+.navigation-link-current::before {
+  display: block;
 }
 
 .naivigation-item {
   position: relative;
-}
-
-.navigation-link-current::before {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: -20px;
-  height: 2px;
-  background-color: var(--border--navigation);
-  content: "";
 }
 
 .navigation-link,
@@ -543,39 +555,36 @@ a {
   padding: 8px 26px;
 }
 
+.search-link {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .primary-button:hover,
-.primary-button:focus,
-.search-link:hover,
-.search-link:focus {
+.primary-button:focus {
   background-color: var(--brown-color-hover);
-  outline: none;
 }
 
 .primary-button:disabled,
-.search-link:disabled,
 .secondary-button:disabled,
 .third-button:disabled {
   background-color: var(--button-disabled);
-  outline: none;
 }
 
-.primary-button:active,
-.search-link:active {
+.primary-button:active {
   background-color: var(--brown-color-active);
   color: var(--white-color-active);
-  outline: none;
 }
 
 .third-button:hover,
 .third-button:focus {
   background-color: var(--green-color-hover);
-  outline: none;
 }
 
 .third-button:active {
   background-color: var(--green-color);
   color: var(--white-color-active);
-  outline: none;
 }
 
 .secondary-navigation-button {
@@ -592,12 +601,9 @@ a {
   background-color: var(--blue-color);
 }
 
-.secondary-button:hover {
-  background-color: var(--blue-color-hover);
-}
-
+.secondary-button:hover,
 .secondary-button:focus {
-  outline: none;
+  background-color: var(--blue-color-hover);
 }
 
 .secondary-button:active {
@@ -658,12 +664,18 @@ a {
   gap: 8px;
 }
 
-.sort-list-item a{
+.sort-list-item a {
+  display: inline-flex;
   padding: 17px 16px;
   border-radius: 4px;
+  order: 2px solid var(--black-color);
 }
 
-.sort-list-item:first-child a{
+.sort-list-item a:active {
+  border: 2px solid var(--black-color);
+}
+
+.sort-list-item-current a {
   border: 2px solid var(--black-color);
 }
 
@@ -671,12 +683,12 @@ a {
   border: 2px solid var(--border-item-color);
 }
 
-.sort-list-item:hover a{
+.sort-list-item a:hover {
   border: 2px solid var(--black-color);
 }
 
-.sort-list-item:focus a{
-  border: 2px solid var(--light-grey-color);
+.sort-list-item a:focus {
+  border: 2px solid var(--blue-color-hover);
 }
 
 .select-sort {
@@ -779,13 +791,13 @@ a {
   display: inline-flex;
 }
 
-.pagination-item:hover a,
-.pagination-item:focus a {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: var(--blue-color-hover);
   border-radius: 4px;
 }
 
-.pagination-item:active a {
+.pagination-item a:active {
   background-color: var(--blue-color);
   color: var(--white-color-active);
 }
