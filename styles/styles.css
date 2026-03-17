@@ -177,6 +177,7 @@ a {
 
 
 .breadcrumbs-link {
+  display:flex;
   font-size: 16px;
   line-height: 21px;
   color: var(--white-color);
@@ -199,24 +200,16 @@ a {
   fill: var(--white-color-active);
 }
 
-.breadcrumbs-image-home {
-  display: flex;
-  align-self: end;
-}
-
 /*Filter*/
 .catalog-filter {
   display: flex;
+  gap: 70px;
 }
 
 .catalog-filter-group {
-  margin-right: 70px;
-  min-width: 150px;
-  max-width: 280px;
-}
-
-.catalog-filter-group:nth-child(4) {
-  margin: 0 70px;
+  flex-grow: 1;
+  margin-left: auto;
+  max-width: 288px;
 }
 
 .catalog-filter-group-title {
@@ -233,6 +226,7 @@ a {
 .catalog-filter-container {
   display: flex;
   gap: 2px;
+  margin-bottom: 42px;
 }
 
 .catalog-buttons-group {
@@ -268,6 +262,18 @@ a {
 .control-input[type='checkbox']:checked:hover  + .control-mark {
   background: var(--white-color-hover) url('../images/svg/checkbox.svg') no-repeat;
   background-position: center;
+}
+
+.control-input[type='checkbox']:checked:focus  + .control-mark {
+  background: var(--white-color) url('../images/svg/checkbox.svg') no-repeat;
+  background-position: center;
+  outline: 3px solid var(--blue-color-active);
+}
+
+.control-input[type='checkbox']:focus  + .control-mark {
+  background: var(--white-color);
+  background-position: center;
+  outline: 3px solid var(--blue-color-active);
 }
 
 .control-mark {
@@ -315,17 +321,21 @@ a {
   background-color: var(--border-item-color);
 }
 
+.control-input:focus {
+  border: 3px solid var(--blue-color-hover);
+  outline: none;
+}
+
 .control-input {
   font-weight: 700;
 }
 
 .control-input-price {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   font-weight: 700;
   border-color: transparent;
   color: var(--black-color);
-  margin-bottom: 48px;
 }
 
 .control-input-price-left {
@@ -336,10 +346,6 @@ a {
 .control-input-price-right {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
-
-.control-input-price:focus {
-  border-color: var(--blue-color-hover);
 }
 
 .control-input-price::placeholder {
@@ -362,11 +368,33 @@ a {
   content: "";
 }
 
+.control-input[type='radio']:focus  + .control-mark {
+  background: var(--white-color);
+  background-position: center;
+  outline: 3px solid var(--blue-color-active);
+}
+
+.control-input[type='radio']:checked:focus  + .control-mark {
+  background: var(--white-color);
+  background-position: center;
+  outline: 3px solid var(--blue-color-active);
+}
+
+.control-input-label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: var(--black-color-hover);
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  transform: translateY(-50%);
+}
+
 /*Range*/
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
   background-color: grey;
 }
 
@@ -388,7 +416,7 @@ a {
 }
 
 .range-toggle:hover {
-  background-color: var(--white-color-hover);
+  background-color: var(--modal-close-button-focus);
 }
 
 .range-toggle:active {
@@ -397,6 +425,7 @@ a {
 
 .range-toggle:focus {
   border: 3px solid var(--blue-color-hover);
+  outline: none;
 }
 
 .toggle-min,
@@ -425,7 +454,7 @@ a {
 
 .transparent-button {
   background-color: rgba(255, 255, 255, 0);
-  padding: 8px 58px;
+  padding: 8px 55px;
   border-radius: 4px;
   outline: none;
   border: 3px solid transparent;
@@ -457,6 +486,7 @@ a {
 .catalog-buttons-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 191px;
   justify-content: center;
 }
 
@@ -474,6 +504,27 @@ a {
 .hotel-card-rating {
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
+}
+
+.hotel-card-stars {
+  background-image: url("../images/svg/star.svg");
+  background-position: left center;
+  background-size: 24px 17px;
+  background-repeat: repeat-x;
+  width: 24px;
+  height: 17px;
+}
+
+.stars-two {
+  width: 48px;
+}
+
+.stars-three {
+  width: 72px;
+}
+
+.stars-four {
+  width: 96px;
 }
 
 /*Navigation*/
@@ -815,6 +866,7 @@ a {
   padding: 17px 16px;
   border-radius: 4px;
   order: 2px solid var(--black-color);
+  outline: none;
 }
 
 .sort-list-item a:active {
@@ -861,6 +913,7 @@ a {
 .select-sort:hover,
 .select-sort:focus {
   border: 2px solid var(--blue-color-hover);
+  outline: none;
 }
 
 .select-sort:disabled {
