@@ -255,25 +255,32 @@ a {
 }
 
 .control-input[type='checkbox']:checked  + .control-mark {
-  background: var(--white-color) url('../images/svg/checkbox.svg') no-repeat;
-  background-position: center;
+  background-image: url('../images/svg/checkbox.svg');
+}
+
+.control-input[type='checkbox']:hover  + .control-mark {
+  background-color: var(--white-color-hover);
 }
 
 .control-input[type='checkbox']:checked:hover  + .control-mark {
-  background: var(--white-color-hover) url('../images/svg/checkbox.svg') no-repeat;
-  background-position: center;
+  background-color: var(--white-color-hover);
 }
 
-.control-input[type='checkbox']:checked:focus  + .control-mark {
-  background: var(--white-color) url('../images/svg/checkbox.svg') no-repeat;
-  background-position: center;
-  outline: 3px solid var(--blue-color-active);
+.control-input[type='checkbox']:active  + .control-mark {
+  background-color: var(--white-color-active);
 }
 
-.control-input[type='checkbox']:focus  + .control-mark {
-  background: var(--white-color);
-  background-position: center;
-  outline: 3px solid var(--blue-color-active);
+.control-input[type='checkbox']:checked:active  + .control-mark {
+  background-color: var(--white-color-active);
+}
+
+.control-input[type='checkbox']:checked:focus-visible  + .control-mark {
+  background-color: var(--white-color);
+}
+
+.control-input[type='checkbox']:focus-visible  + .control-mark {
+  background-color: var(--white-color);
+  box-shadow: 0 0 0 3px var(--blue-color-active);
 }
 
 .control-mark {
@@ -284,28 +291,16 @@ a {
   height: 20px;
   border-radius: 4px;
   background-color: var(--white-color);
-}
-
-.control:hover .control-mark {
-  background-color: var(--white-color-hover);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .control:hover span {
   color: var(--white-color-hover);
 }
 
-.control:active .control-mark {
-  background-color: var(--white-color-active);
-}
-
-
 .control:active span {
   color: var(--white-color-active);
-}
-
-.control:focus .control-mark {
-  border: 3px solid var(--blue-color-active);
-  background-color: var(--white-color);
 }
 
 .newsletter-email {
@@ -322,8 +317,7 @@ a {
 }
 
 .control-input:focus {
-  border: 3px solid var(--blue-color-hover);
-  outline: none;
+  outline: 3px solid var(--blue-color-hover);
 }
 
 .control-input {
@@ -368,16 +362,22 @@ a {
   content: "";
 }
 
-.control-input[type='radio']:focus  + .control-mark {
-  background: var(--white-color);
-  background-position: center;
-  outline: 3px solid var(--blue-color-active);
+.control-input[type='radio']:hover  + .control-mark {
+  background-color: var(--white-color-hover);
 }
 
-.control-input[type='radio']:checked:focus  + .control-mark {
+.control-input[type='radio']:active  + .control-mark {
+  background-color: var(--white-color-active);
+}
+
+.control-input[type='radio']:focus-visible  + .control-mark {
   background: var(--white-color);
-  background-position: center;
-  outline: 3px solid var(--blue-color-active);
+  box-shadow: 0 0 0 3px var(--blue-color-active);
+}
+
+.control-input[type='radio']:checked:focus-visible  + .control-mark {
+  background: var(--white-color);
+  box-shadow: 0 0 0 3px var(--blue-color-active);
 }
 
 .control-input-label {
@@ -1126,7 +1126,7 @@ a {
 }
 
 .modal-close-button:focus {
-  border: 3px solid var(--blue-color-active);
+  outline: 3px solid var(--blue-color-active);
 }
 
 .modal-close-button:active path {
@@ -1243,7 +1243,7 @@ a {
   outline: none;
   background-color: var(--modal-close-button-focus);
   border-radius: 4px;
-  border: 3px solid var(--blue-color-active);
+  outline: 3px solid var(--blue-color-active);
 }
 
 .input-first-group {
