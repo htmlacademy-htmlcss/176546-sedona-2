@@ -177,7 +177,7 @@
       </a>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-on">
       <div class="modal modal-search">
         <div class="modal-header">
           <h2 class="section-title modal-title">Поиск гостиницы в седоне</h2>
@@ -191,62 +191,67 @@
         <section class="modal-content">
           <h3 class="visually-hidden">Форма регистрации</h3>
           <form class="modal-form" action="http://echo.htmlacademy.ru" method="post">
-            <div class="field-group-date">
+            <div class="field-group">
               <span class="input-title">Дата Заезда:</span>
               <label class="input-label">
                 <input class="input-date" type="text" name="checkin" value="27 апреля 2020">
                 <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
                   <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
                 </svg>
+                <p class="input-description wrong-date">Мы не можем отправить вас в прошлое.</p>
               </label>
             </div>
-            <p class="input-description wrong-date">Мы не можем отправить вас в прошлое.</p>
-            <div class="field-group-date">
+            <div class="field-group">
               <span class="input-title">Дата Выезда:</span>
               <label class="input-label">
                 <input class="input-date" type="text" name="checkout" value="1 сентября 2021">
                 <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
                   <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
                 </svg>
+                <p class="input-description">На эти даты есть свободные места. Пока есть.</p>
               </label>
             </div>
-            <p class="input-description">На эти даты есть свободные места. Пока есть.</p>
 
-            <div class="field-group-date">
-              <span class="input-title">Взрослые:</span>
-              <div class="input-first-group">
-                <button class="button button-minus" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                    <path fill="#000" d="M3 9v2h14V9z"/>
-                  </svg>
-                </button>
-                <label class="input-label">
-                  <input class="input-adult" type="text" value="2">
-                </label>
-                <button class="button button-plus" type="button">
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                    <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
-                  </svg>
-                </button>
+            <div class="field-group-container">
+              <div class="field-group">
+                <span class="input-title">Взрослые:</span>
+                <div class="input-first-group">
+                  <button class="button button-minus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="#000" d="M3 9v2h14V9z"/>
+                    </svg>
+                  </button>
+                  <label class="input-label">
+                    <input class="input-adult" type="text" value="2">
+                  </label>
+                  <button class="button button-plus" type="button">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <span class="input-title input-title-children">Дети:
-                <img class="triangle" src="images/svg/triangle.svg" width="19" height="9" alt="">
-                <p class="modal-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-              </span>
-              <div class="input-second-group">
-                <button class="button button-minus" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                    <path fill="#000" d="M3 9v2h14V9z"/>
-                  </svg>
-                </button>
-                <label class="input-label">
-                  <input class="input-adult" type="text" value="2">
-                </label>
-                <button class="button button-plus" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                    <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
-                  </svg>
-                </button>
+
+              <div class="field-group">
+                <span class="input-title input-title-children">Дети:
+                  <img class="triangle" src="images/svg/triangle.svg" width="19" height="9" alt="">
+                  <p class="modal-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </span>
+                <div class="input-second-group">
+                  <button class="button button-minus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="#000" d="M3 9v2h14V9z"/>
+                    </svg>
+                  </button>
+                  <label class="input-label">
+                    <input class="input-adult" type="text" value="2">
+                  </label>
+                  <button class="button button-plus" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <button class="button secondary-button input-submit" type="submit">Найти</button>
