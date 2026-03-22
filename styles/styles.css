@@ -124,7 +124,7 @@ a {
 .page-header {
   display: flex;
   align-items: center;
-  padding: 0 64px;
+  padding: 0 70px;
 }
 
 /*Main*/
@@ -553,7 +553,7 @@ a {
 }
 
 .secondary-navigation-item:not(:last-child) {
-  padding: 19px 12px;
+  padding: 22px 12px 18px;
 }
 
 .secondary-navigation-item:last-child {
@@ -628,7 +628,8 @@ a {
 
 /*Description*/
 .description {
-  padding: 69px;
+  padding-top: 69px;
+  padding-bottom: 90px;
 }
 
 .description-title {
@@ -640,7 +641,8 @@ a {
 }
 
 .search-description,
-.description-reasons {
+.description-reasons,
+.newsletter-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
@@ -669,8 +671,13 @@ a {
 }
 
 .reasons-item {
-  padding: 102px 85px;
   flex-grow: 1;
+  padding: 113px 85px;
+}
+
+.reasons-item:first-child,
+.reasons-item:last-child {
+  padding: 102px 85px;
 }
 
 .reasons-img {
@@ -696,21 +703,38 @@ a {
 
 /*Recomendations*/
 .recommendations-section {
-  padding: 64px 347px;
+  padding: 64px 12px;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-.recommendations-title {
+.recommendations-title-primary {
+  font-size: 30px;
   line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.recommendations-title-secondary {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
   margin-bottom: 30px;
 }
 
-.recommendations-description {
+.recommendations-reasons {
   margin: 0;
-  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.recommendations-description {
+  margin: 0 auto;
+  max-width: 230px;
 }
 
 .recommendations-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -718,7 +742,10 @@ a {
 
 .recommendations-item {
   padding: 81px 85px;
-  flex-grow: 1;
+}
+
+.recommendations-item:last-child img {
+  margin-bottom: 21px;
 }
 
 .recommendations-item:nth-child(even) {
@@ -727,7 +754,7 @@ a {
 
 .recommendations-img {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 /*Search*/
@@ -738,6 +765,9 @@ a {
 .search-title,
 .newsletter-title {
   margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .search-link,
@@ -790,7 +820,7 @@ a {
 
 .secondary-navigation-circle {
   position: absolute;
-  top: 7px;
+  top: 10px;
   right: 3px;
 }
 
@@ -821,18 +851,17 @@ a {
 .search-description,
 .newsletter-description,
 .newsletter-form-email {
-  margin: 0;
-  padding: 0;
   margin-bottom: 54px;
 }
 
 .newsletter-description {
-  padding: 0 140px;
+  padding: 0 100px;
 }
 
 .newsletter-form-email {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .newsletter-button {
@@ -963,7 +992,7 @@ a {
 }
 
 .newsletter {
-  padding: 96px 258px;
+  padding: 96px 258px 104px;
 }
 
 .newsletter-inner {
@@ -997,7 +1026,7 @@ a {
 }
 
 .footer-social-item {
-  padding: 13px 17px;
+  padding: 13px 13px;
 }
 
 .footer-social-item:nth-child(3n) {
