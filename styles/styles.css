@@ -620,6 +620,10 @@ a {
   fill: var(--black-color-active);
 }
 
+.footer-link {
+  margin-top: 4px;
+}
+
 .social-link:hover path,
 .social-link:focus path {
   fill: var(--blue-color-hover);
@@ -1019,6 +1023,7 @@ a {
 .footer-contacts-address {
   display: block;
   width: 336px;
+  margin-left: 5px;
 }
 
 .footer-contacts-phone {
