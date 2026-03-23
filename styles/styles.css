@@ -1137,7 +1137,7 @@ a {
 .modal-form {
   display: grid;
   grid-template-columns: 100%;
-  row-gap: 48px;
+  row-gap: 51px;
 }
 
 .modal-title {
@@ -1145,7 +1145,7 @@ a {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 }
 
 .modal-close-button {
@@ -1175,7 +1175,6 @@ a {
 .field-group {
   position: relative;
   display: flex;
-  gap: 24px;
   align-items: center;
   width: 100%;
 }
@@ -1219,10 +1218,18 @@ a {
   font-weight: 700;
 }
 
+.checkin-group {
+  gap: 24px;
+}
+
+.checkout-group {
+  gap: 20px;
+}
+
 .input-date-img {
   position: absolute;
-  top: 16px;
-  right: 17px;
+  top: 15px;
+  right: 22px;
 }
 
 .input-date-img path {
