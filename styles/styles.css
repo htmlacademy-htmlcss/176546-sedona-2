@@ -1137,7 +1137,7 @@ a {
 .modal-form {
   display: grid;
   grid-template-columns: 100%;
-  row-gap: 51px;
+  row-gap: 50px;
 }
 
 .modal-title {
@@ -1196,7 +1196,7 @@ a {
 .input-title-children::after {
   content: 'i';
   color: var(--white-color);
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 4px 11px;
   background-image: url("../images/svg/ellipse.svg");
   background-repeat: no-repeat;
@@ -1274,7 +1274,7 @@ a {
 }
 
 .input-adult {
-  width: 100%;
+  padding: 0 10px;
 }
 
 .input-date,
@@ -1308,15 +1308,14 @@ a {
 }
 
 .button-plus,
-.button-minus,
-.input-adult {
-  padding: 14px 10px;
+.button-minus {
+  padding: 13px 8px;
   background-color: var(--body-color);
 }
 
 .input-adult {
   width: 31px;
-  height: 48px;
+  height: 47px;
 }
 
 .button-plus path,
@@ -1359,10 +1358,10 @@ a {
 
 .modal-info {
   margin: 0;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   position: absolute;
-  right: 40px;
-  top: 52px;
+  right: 42px;
+  top: 50px;
   width: 256px;
   height: 143px;
   font: inherit;
@@ -1378,8 +1377,8 @@ a {
 .triangle {
   display: none;
   position: absolute;
-  right: 158px;
-  top: 43px
+  right: 161px;
+  top: 41px
 }
 
 .modal-on {
