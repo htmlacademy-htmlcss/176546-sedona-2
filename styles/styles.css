@@ -657,13 +657,29 @@ a {
 
 /*Reasons*/
 .reasons-title {
+  position: relative;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   margin: 0 auto 62px;
-
   display: block;
   width: 175px;
+}
+
+.reasons-title-black::after,
+.reasons-title-white::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 57px;
+  right: 57px;
+  top: 86px;
+  height: 2px;
+  background-color: var(--black-color-active);
+}
+
+.reasons-title-white::after {
+  background-color: var(--white-color);
 }
 
 .reasons-description {
