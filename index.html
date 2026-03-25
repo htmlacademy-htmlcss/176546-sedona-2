@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Сайт Sedona</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/png/favicon.png">
   </head>
   <body>
     <header class="page-header white-section white-title">
-      <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
+      <a class="header-logo-link" href="index.html">
+        <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
+      </a>
       <nav class="navigation">
         <ul class="navigation-list list-none">
           <li class="naivigation-item">
@@ -72,7 +74,9 @@
             <h3 class="reasons-title section-title white-title reasons-title-white">Настоящий городок</h3>
             <p class="reasons-description white-color-description white-title">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-          <li><img class="reasons-img" src="images/city.jpg" width="800" height="385" alt="Фото города"></li>
+          <li class="reasons-item-img">
+            <img class="reasons-img" src="images/city.jpg" width="800" height="385" alt="Фото города">
+          </li>
 
           <li class="reasons-item light-grey-color-item">
             <h3 class="reasons-title section-title reasons-title-black">Небольшая площадь</h3>
@@ -87,7 +91,9 @@
             <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
-          <li><img class="reasons-img" src="images/canyon.jpg" width="800" height="385" alt="Мост Дьявола"></li>
+          <li class="reasons-item-img">
+            <img class="reasons-img" src="images/canyon.jpg" width="800" height="385" alt="Мост Дьявола">
+          </li>
           <li class="reasons-item blue-color-item">
             <h3 class="reasons-title section-title white-title reasons-title-white">Там есть<br> мост дьявола</h3>
             <p class="reasons-description white-color-description white-title">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -102,18 +108,15 @@
         </div>
 
         <ul class="recommendations-list list-none">
-          <li class="recommendations-item light-grey-color-item">
-            <img class="recommendations-img" src="images/svg/advantage-icon.svg" width="76" height="72" alt="">
+          <li class="recommendations-item recommendations-item-home light-grey-color-item">
             <h3 class="recommendations-title-secondary section-title">Жильё</h3>
             <p class="recommendations-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
           </li>
-          <li class="recommendations-item">
-            <img class="recommendations-img" src="images/svg/advantage-icon-2.svg" width="75" height="72" alt="">
+          <li class="recommendations-item recommendations-item-meal">
             <h3 class="recommendations-title-secondary section-title">Еда</h3>
             <p class="recommendations-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="recommendations-item light-grey-color-item">
-            <img class="recommendations-img" src="images/svg/advantage-icon-3.svg" width="75" height="76" alt="">
+          <li class="recommendations-item recommendations-item-suvenier light-grey-color-item">
             <h3 class="recommendations-title-secondary section-title">Сувениры</h3>
             <p class="recommendations-description">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
@@ -131,7 +134,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="newsletter-form-email">
             <label class="newsletter-label" for="newsletter-email"></label>
-              <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
+              <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
               <button class="button secondary-button newsletter-button" type="submit">Подписаться</button>
           </p>
         </form>
@@ -182,7 +185,7 @@
       <div class="modal modal-search">
         <div class="modal-header">
           <h2 class="section-title modal-title">Поиск гостиницы в седоне</h2>
-          <button class="button modal-close-button">
+          <button class="button modal-close-button" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" fill="none" viewBox="0 0 53 53">
               <path fill="#000" d="M34 21.292 32.708 20 27 25.708 21.292 20 20 21.292 25.708 27 20 32.708 21.292 34 27 28.292 32.708 34 34 32.708 28.292 27z"/>
             </svg>
@@ -194,38 +197,38 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="field-group checkin-group">
               <span class="input-title">Дата Заезда:</span>
-              <label class="input-label">
-                <input class="input-date" type="text" name="checkin" value="27 апреля 2020">
-                <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
-                  <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
-                </svg>
-                <span class="input-description wrong-date">Мы не можем отправить вас в прошлое.</span>
-              </label>
+              <label class="input-label" for="checkin"></label>
+              <input class="input-date" id="checkin" type="text" name="checkin" value="27 апреля 2020" required>
+              <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
+              </svg>
+              <span class="input-description wrong-date">Мы не можем отправить вас в прошлое.</span>
+
             </div>
             <div class="field-group checkout-group">
               <span class="input-title">Дата Выезда:</span>
-              <label class="input-label">
-                <input class="input-date" type="text" name="checkout" value="1 сентября 2021">
-                <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
-                  <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
-                </svg>
-                <span class="input-description">На эти даты есть свободные номера. Пока есть.</span>
-              </label>
+              <label class="input-label" for="checkout"></label>
+              <input class="input-date" id="checkout" type="text" name="checkout" value="1 сентября 2021" required>
+              <svg class="input-date-img" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1m0 12H1V7h14zM1 6V3h2v2h1V3h8v2h1V3h2v3z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5M10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5M3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5M12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5M12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5"/>
+              </svg>
+              <span class="input-description">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <div class="field-group-container">
               <div class="field-group">
                 <span class="input-title">Взрослые:</span>
                 <div class="input-first-group">
-                  <button class="button button-minus" type="button">
+                  <label class="input-label" for="button-minus-left"></label>
+                  <button class="button button-minus" id='button-minus-left' type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#000" d="M3 9v2h14V9z"/>
                     </svg>
                   </button>
-                  <label class="input-label">
-                    <input class="input-adult" type="text" value="2">
-                  </label>
-                  <button class="button button-plus" type="button">
+                  <label class="input-label" for="adult"></label>
+                  <input class="input-adult" id="adult" type="text" value="2">
+                  <label class="input-label" for="button-plus-left"></label>
+                  <button class="button button-plus" id='button-plus-left' type="button">
                     <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
                     </svg>
@@ -239,15 +242,17 @@
                   <span class="modal-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="input-second-group">
-                  <button class="button button-minus" type="button">
+                  <label class="input-label" for="button-minus-right"></label>
+                  <button class="button button-minus" id='button-minus-right' type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#000" d="M3 9v2h14V9z"/>
                     </svg>
                   </button>
-                  <label class="input-label">
-                    <input class="input-adult" type="text" value="2">
-                  </label>
-                  <button class="button button-plus" type="button">
+                  <label class="input-label" for="children"></label>
+                    <input class="input-adult" id='children' type="text" value="2">
+
+                  <label class="input-label" for="button-plus-right"></label>
+                  <button class="button button-plus" id="button-plus-right" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#000" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6z"/>
                     </svg>

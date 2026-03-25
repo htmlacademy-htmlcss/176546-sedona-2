@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/png/favicon.png">
   </head>
   <body>
     <header class="page-header white-section white-section">
-      <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
+      <a class="header-logo-link" href="index.html">
+        <img class="header-logo" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седоны">
+      </a>
       <nav class="navigation">
         <ul class="navigation-list list-none">
           <li class="naivigation-item">
@@ -177,22 +179,17 @@
         </div>
 
         <ul class="sort-list list-none">
-          <li class="sort-list-item sort-list-item-current">
-            <a href="#">
-              <img class="sort-list-image" src="images/svg/view-cards.svg" width="16" height="14" alt="Показать карточки">
+          <li class="sort-list-item sort-list-item-current sort-list-view-cards">
+            <a class="view-cards-link" href="#"></a>
+          </li>
+          <li class="sort-list-item sort-list-view-card">
+            <a class="view-cards-link" href="#"></a>
+          </li>
+          <li class="sort-list-item sort-list-view-list">
+            <a class="view-cards-link" href="#">
             </a>
           </li>
-          <li class="sort-list-item">
-            <a href="#">
-              <img class="sort-list-image" src="images/svg/view-card.svg" width="16" height="14" alt="Показать поэлементно">
-            </a>
-          </li>
-          <li class="sort-list-item">
-            <a href="#">
-              <img class="sort-list-image" src="images/svg/view-list.svg" width="16" height="14" alt="Показать список">
-            </a>
-          </li>
-        </ul>
+      </ul>
       </section>
 
       <section class="hotel white-section white-section">
@@ -313,7 +310,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="newsletter-form-email">
             <label class="newsletter-label" for="newsletter-email"></label>
-            <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail">
+            <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
             <button class="button secondary-button newsletter-button" type="submit">Подписаться</button>
           </p>
         </form>
