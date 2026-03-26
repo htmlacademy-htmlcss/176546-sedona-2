@@ -189,7 +189,8 @@ a {
 }
 
 
-.breadcrumbs-link {
+.breadcrumbs-link,
+.breadcrumbs-link-current {
   display:flex;
   font-size: 16px;
   line-height: 21px;
@@ -602,6 +603,26 @@ a {
   margin-left: 20px;
 }
 
+.secondary-navigation-link-favorites {
+  position: relative;
+}
+
+.secondary-navigation-link-favorites::after {
+  content: attr(data-likes);
+  position: absolute;
+  top: -58%;
+  right: -35%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  font: inherit;
+  font-size: 10px;
+  text-align: center;
+
+}
+
 .navigation-link {
   padding: 20px 16px;
   position: relative;
@@ -628,6 +649,7 @@ a {
 
 .naivigation-item {
   position: relative;
+  display: inline-flex;
 }
 
 .navigation-link,
@@ -753,6 +775,7 @@ a {
 
 .reasons-img {
   display: block;
+  height: 100%;
 }
 
 .white-title,
