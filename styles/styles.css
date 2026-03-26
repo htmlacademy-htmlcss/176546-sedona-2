@@ -1354,7 +1354,7 @@ a {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  min-width: 120px;
+  min-width: 119px;
 }
 
 .input-title-children::after {
@@ -1473,13 +1473,13 @@ a {
 
 .button-plus,
 .button-minus {
-  padding: 13px 8px;
+  padding: 13px 7px;
   background-color: var(--body-color);
 }
 
 .input-adult {
-  width: 31px;
-  height: 47px;
+  width: 28px;
+  height: 45px;
 }
 
 .button-plus path,
@@ -1525,7 +1525,7 @@ a {
   padding: 20px 18px 18px 22px;
   position: absolute;
   right: 42px;
-  top: 50px;
+  top: 52px;
   width: 256px;
   height: 143px;
   font: inherit;
@@ -1542,7 +1542,7 @@ a {
   display: none;
   position: absolute;
   right: 161px;
-  top: 41px
+  top: 43px
 }
 
 .modal-on {
