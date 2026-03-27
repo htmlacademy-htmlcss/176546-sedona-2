@@ -584,6 +584,8 @@ body {
 
 .secondary-navigation {
   margin-left: auto;
+  flex-shrink: 0;
+  max-width: 300px;
 }
 
 .secondary-navigation-item {
@@ -1344,6 +1346,14 @@ body {
   width: 100%;
 }
 
+.field-adult-group {
+  gap: 15px;
+}
+
+.field-children-group {
+  gap: 9px;
+}
+
 .field-group-container {
   position: relative;
   display: flex;
@@ -1352,7 +1362,6 @@ body {
 }
 
 .input-title {
-  font: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1362,18 +1371,13 @@ body {
 .input-title-children::after {
   content: 'i';
   color: var(--white-color);
-  margin-left: 5px;
+  margin-left: 3px;
   padding: 4px 11px;
   background-image: url("../images/svg/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
   font: inherit;
   font-weight: 400;
-}
-
-.input-label {
-  flex-grow: 1;
-  position: relative;
 }
 
 .input-date {
@@ -1385,11 +1389,11 @@ body {
 }
 
 .checkin-group {
-  gap: 8px;
+  gap: 17px;
 }
 
 .checkout-group {
-  gap: 8px;
+  gap: 17px;
 }
 
 .input-date-img {
@@ -1466,16 +1470,9 @@ body {
   outline: 3px solid var(--blue-color-active);
 }
 
-.input-first-group {
-  margin-left: 15px;
-}
-
-.input-second-group {
-}
-
 .button-plus,
 .button-minus {
-  padding: 13px 7px;
+  padding: 14px 10px;
   background-color: var(--body-color);
 }
 
@@ -1526,8 +1523,8 @@ body {
   margin: 0;
   padding: 20px 18px 18px 22px;
   position: absolute;
-  right: 42px;
-  top: 52px;
+  right: 43px;
+  top: 53px;
   width: 256px;
   height: 143px;
   font: inherit;
@@ -1543,8 +1540,8 @@ body {
 .triangle {
   display: none;
   position: absolute;
-  right: 161px;
-  top: 43px
+  right: 162px;
+  top: 44px
 }
 
 .modal-on {
