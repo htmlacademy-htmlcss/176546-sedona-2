@@ -121,10 +121,6 @@ body {
 }
 
 /*Header*/
-.header-logo-link {
-  /*position: relative;*/
-}
-
 .header-logo {
   position: absolute;
   z-index: 1;
