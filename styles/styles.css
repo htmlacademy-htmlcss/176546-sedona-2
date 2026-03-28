@@ -1468,13 +1468,18 @@ body {
 
 .button-plus,
 .button-minus {
+  width: 38px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 14px 10px;
   background-color: var(--body-color);
 }
 
 .input-adult {
-  width: 28px;
-  height: 45px;
+  width: 31px;
+  height: 48px;
 }
 
 .button-plus path,
